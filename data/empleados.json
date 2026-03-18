@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana López",
+    "salario": 28500.0,
+    "fecha_ingreso": "2022-03-15",
+    "vacaciones_disponibles": 14
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Méndez",
+    "salario": 32000.0,
+    "fecha_ingreso": "2021-11-01",
+    "vacaciones_disponibles": 18
+  },
+  {
+    "id": 3,
+    "nombre": "María González",
+    "salario": 24800.0,
+    "fecha_ingreso": "2023-06-20",
+    "vacaciones_disponibles": 6
+  },
+  {
+    "id": 4,
+    "nombre": "Juan Pérez",
+    "salario": 41500.0,
+    "fecha_ingreso": "2020-01-10",
+    "vacaciones_disponibles": 22
+  }
+]

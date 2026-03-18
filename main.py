@@ -13,8 +13,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://localhost:3001",
-        "https://*.vercel.app",
-        "https://frontend.vercel.app",
+        "https://employees-frontend-one.vercel.app/",
     ],
     allow_credentials=False,
     allow_methods=["*"],

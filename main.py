@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from routers import empleados
 
 app = FastAPI(
@@ -7,8 +8,20 @@ app = FastAPI(
     version="1.0.0"
 )
 
-app.include_router(empleados.router)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:3001",
+        ".vercel.app",
+        "*"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
+app.include_router(empleados.router)
 
 @app.get("/")
 async def root():
